@@ -1,56 +1,66 @@
 .about-me-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem;
-    background-color: #1a1a1a;
-    color: #fff;
-  }
-  
-  .about-me-container {
-    max-width: 730px;
-  }
-  
-  .about-me-container h1 {
-    font-size: 5.4rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-  }
-  
-  .about-me-container p {
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-  }
-  
-  .highlight {
-    color: #ed145b;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem;
+  background-color: #1a1a1a;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-me-container {
+  max-width: 730px;
+}
+
+.about-me-container h1 {
+  font-size: 5.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.about-me-container p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #ed145b;
+}
+
 .about-me-image-container {
-    flex-shrink: 0;
-    margin-right: 100px;
+  flex-shrink: 0;
+  margin-right: 100px;
+}
+
+.about-me-image {
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #cf1150;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .about-me-section {
+    flex-direction: column;
+    text-align: center;
   }
-  
+
   .about-me-image {
-    width: 700px;
-    height: 700px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #cf1150;
-    pointer-events: none;
-    user-select: none;
-  }  
-  
-  @media (max-width: 768px) {
-    .about-me-section {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .about-me-image {
-      margin-top: 2rem;
-      margin-right: -100px;
-    }
+    width: 500px;
+    height: 500px;
+    margin-top: 2rem;
+    margin-right: -100px;
   }
+}

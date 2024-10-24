@@ -1,10 +1,20 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import './AboutMe.css';
-import AboutMeIcon from '../../../public/images/aboutme-icon.jpeg'
+import AboutMeIcon from '../../assets/images/aboutme-icon.jpeg';
 
 const AboutMe: React.FC = () => {
+  const [aboutMeRef, aboutMeInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <section id="sobre-mim" className="about-me-section">
+    <section 
+      id="sobre-mim" 
+      className={`about-me-section ${aboutMeInView ? 'reveal' : ''}`} 
+      ref={aboutMeRef}
+    >
       <div className="about-me-container">
         <h1>Olá! Meu nome é <span className="highlight">Saulo Pereira</span></h1>
         <p>Sou um <span className="highlight">desenvolvedor full-stack</span> apaixonado por resolver problemas com código e construir interfaces eficientes e funcionais.</p>
