@@ -8,10 +8,10 @@ const NavBar: React.FC = () => {
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <div className="social-icons">
-          <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/saulo-pereira-jesus/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} className="nav-icon" />
           </a>
-          <a href="https://github.com/seu-perfil" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/saulosw" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} className="nav-icon" />
           </a>
         </div>
