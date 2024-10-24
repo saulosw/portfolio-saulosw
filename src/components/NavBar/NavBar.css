@@ -1,0 +1,50 @@
+:root {
+  --navlink-primary-color: #474d4e;
+  --link-hover-color: #ed145b;
+  --underline-color: #ed145b;
+}
+
+.navbar {
+  background-color: #131414;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-links {
+  margin-top: 15px;
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--navlink-primary-color);
+  font-size: 22px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 2px;
+  background-color: var(--underline-color);
+  bottom: -5px;
+  left: 35%;
+  transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.nav-link:hover {
+  color: var(--link-hover-color);
+  text-shadow: 0 0 5px var(--link-hover-color), 
+               0 0 10px var(--link-hover-color), 
+               0 0 20px var(--link-hover-color);
+}
