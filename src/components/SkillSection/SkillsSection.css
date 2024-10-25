@@ -1,0 +1,27 @@
+.skills-section {
+    opacity: 0;
+    text-align: center;
+    margin: 50px 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .skills-section.reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .skills-section h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
