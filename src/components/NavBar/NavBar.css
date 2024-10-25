@@ -2,7 +2,8 @@
   --navlink-primary-color: #474d4e;
   --link-hover-color: #ed145b;
   --underline-color: #ed145b;
-  --icon-color: #fff;
+  --icon-color: #ed145b;
+  --icon-color-hover: #d11050;
 }
 
 .navbar {
@@ -16,14 +17,14 @@
 }
 
 .nav-icon {
-  color: var(--icon-color);
+  color: #ed145b;
   font-size: 35px;
   margin-top: 5px;
   transition: color 0.2s ease-in-out;
 }
 
 .nav-icon:hover {
-  color: var(--link-hover-color);
+  color: var(--icon-color-hover)
 }
 
 .navbar-links {
