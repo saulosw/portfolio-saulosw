@@ -1,0 +1,104 @@
+.project-card {
+  display: flex;
+  background-color: #121C1E;
+  color: #ED145B;
+  border-radius: 12px;
+  padding: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  gap: 2rem;
+  transition: transform 0.3s ease, opacity 0.6s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.project-card.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 600px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 3.8rem;
+  font-weight: bold;
+  color: #ED145B;
+  margin: 0 0 0.5rem;
+}
+
+.project-description {
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  margin: 0.5rem 3rem 1rem;
+}
+
+.project-technologies {
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin: 0.5rem 3rem 1rem;
+}
+
+.project-link {
+  font-size: 1.2rem;
+  color: #ED145B;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: #D11050;
+}
+
+.redirect-icon {
+  margin-top: -5.2px;
+  margin-left: 0.4rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-title {
+    font-size: 2.5rem;
+  }
+
+  .project-description {
+    font-size: 1.2rem;
+    margin: 0.5rem 1rem;
+  }
+
+  .project-link {
+    font-size: 1rem;
+  }
+}
