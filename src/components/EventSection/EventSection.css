@@ -1,0 +1,23 @@
+.events-section {
+    padding: 2rem;
+    text-align: center;
+    color: #f0f0f0;
+  }
+  
+  .section-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .section-description {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .events-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+  }
+  

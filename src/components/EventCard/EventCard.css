@@ -1,0 +1,45 @@
+.event-card {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, opacity 1.4s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+  
+.event-card.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.event-card:hover {
+    transform: scale(1.01) translateY(-5px);
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+  
+.event-title {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    color: #ED145B;
+    font-weight: bold;
+}
+  
+.event-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #fff;
+}
