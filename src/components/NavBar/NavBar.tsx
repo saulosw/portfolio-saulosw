@@ -22,21 +22,10 @@ const NavBar: React.FC = () => {
 
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul className="navbar-nav navbar-links ms-auto">
-            <li>
-              <a className="nav-link" href="#sobre-mim">Sobre mim</a>
-            </li>
-            <li>
-              <a className="nav-link" href="#skills">Skills</a>
-            </li>
-            <li>
-              <a className="nav-link" href="#projetos">Projetos</a>
-            </li>
-            <li>
-              <a className="nav-link" href="#eventos">Eventos</a>
-            </li>
-            <li>
-              <a className="nav-link" href="#contato">Contato</a>
-            </li>
+            <li><a className="nav-link" href="#sobre-mim">Sobre mim</a></li>
+            <li><a className="nav-link" href="#skills">Skills</a></li>
+            <li><a className="nav-link" href="#projetos">Projetos</a></li>
+            <li><a className="nav-link" href="#eventos">Eventos</a></li>
           </ul>
         </div>
       </div>

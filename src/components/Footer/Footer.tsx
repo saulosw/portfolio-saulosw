@@ -14,7 +14,6 @@ const Footer: React.FC = () => {
             <li><a href="#skills" className="footer-link">Skills</a></li>
             <li><a href="#projetos" className="footer-link">Projetos</a></li>
             <li><a href="#eventos" className="footer-link">Eventos</a></li>
-            <li><a href="#contato" className="footer-link">Contato</a></li>
           </ul>
         </nav>
         <div className="social-icons">
@@ -25,6 +24,9 @@ const Footer: React.FC = () => {
             <FontAwesomeIcon icon={faGithub} className="social-icon" />
           </a>
         </div>
+        <a href="mailto:saulopereiradejesus@gmail.com" className="footer-link footer-email">
+          saulopereiradejesus@gmail.com
+        </a>
       </div>
     </footer>
   );
