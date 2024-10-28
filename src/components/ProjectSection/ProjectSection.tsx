@@ -3,9 +3,10 @@ import './ProjectSection.css';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import { useInView } from 'react-intersection-observer';
 
-import FoodPathRef from '../../assets/videos/FoodPathRef.mp4';
-import AccountManagementRef from '../../assets/videos/AccountManagementRef.mp4';
-import UnderOceanRef from '../../assets/videos/UnderOceanRef.mp4';
+import FoodPathPrev from '../../assets/videos/FoodPathPrev.mp4';
+import AccountManagementPrev from '../../assets/videos/AccountManagementPrev.mp4';
+import UnderOceanPrev from '../../assets/videos/UnderOceanPrev.mp4';
+import CuteCatPrev from '../../assets/videos/CuteCatPrev.mp4';
 
 const ProjectsSection: React.FC = () => {
   const { ref, inView } = useInView({
@@ -18,22 +19,29 @@ const ProjectsSection: React.FC = () => {
       title: "FoodPath",
       description: "FoodPath é uma plataforma desenvolvida como projeto da faculdade para conscientizar e facilitar doações no combate à fome no Brasil. Com dados estatísticos e acesso a ONGs, o site conecta usuários a oportunidades de doação, promovendo uma distribuição de recursos para apoiar a erradicação da fome no país.",
       tecnologies: "React - JavaScript - HTML5 - CSS3 - Node.js - SQL",
-      video: FoodPathRef,
+      video: FoodPathPrev,
       githubLink: "https://github.com/saulosw/foodpath-FECAP"
     },
     {
       title: "Bank Account Management",
       description: "Sistema de gerenciamento de contas bancárias desenvolvido em Python. Permite operações essenciais como criar clientes e contas, realizar depósitos, saques e monitorar o histórico de transações. O sistema também envia e-mails de boas-vindas aos novos clientes com um código de validação.",
       tecnologies: "Python - HTML5 - SQL",
-      video: AccountManagementRef,
+      video: AccountManagementPrev,
       githubLink: "https://github.com/saulosw/account-management"
     },
     {
       title: "UnderOcean",
       description: "UnderOcean é um jogo educacional desenvolvido em Unity proposto pela faculdade, para conscientizar sobre a preservação dos oceanos e da vida marinha. Nele, os jogadores têm a missão de remover poluentes do ambiente marinho, aprendendo sobre a preservação dos ecossistemas aquáticos.",
       tecnologies: "C# - Unity",
-      video: UnderOceanRef,
+      video: UnderOceanPrev,
       githubLink: "https://github.com/saulosw/underocean_-main-game"
+    },
+    {
+      title: "CuteCat",
+      description: "CuteCat é um jogo desenvolvido em C# com a Unity. No jogo, você é responsável por cuidar de um gato virtual, monitorando suas necessidades de fome, higiene, sono e felicidade. O objetivo é mantê-lo saudável e feliz, interagindo com botões que permitem satisfazer suas necessidades e equilibrar suas barras de status.",
+      tecnologies: "C# - Unity",
+      video: CuteCatPrev,
+      githubLink: "https://github.com/saulosw/cute-cat-game"
     },
   ];
 
