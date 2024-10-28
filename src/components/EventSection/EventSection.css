@@ -20,4 +20,9 @@
     gap: 5rem;
     justify-content: center;
   }
-  
+
+  @media (max-width: 768px) {
+    .events-container {
+      gap: 0.2rem;
+    }
+  }

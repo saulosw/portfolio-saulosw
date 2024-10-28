@@ -20,8 +20,13 @@
   .skills-container {
     display: flex;
     justify-content: center;
-    gap: 8rem;
+    gap: 5rem;
     margin-top: 20px;
     flex-wrap: wrap;
   }
   
+  @media (max-width: 768px) {
+    .skills-container {
+      gap: 3rem;
+    }
+  }
