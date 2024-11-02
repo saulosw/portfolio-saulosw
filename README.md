@@ -1,50 +1,60 @@
-# React + TypeScript + Vite
+# 👤 Saulo Pereira | Portfólio Pessoal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao repositório do meu portfólio pessoal! Este site foi desenvolvido para exibir minhas habilidades, projetos e experiências no desenvolvimento de software. Aqui, você encontrará uma visão completa da minha jornada e uma amostra do meu trabalho.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💡 Sobre o Projeto
 
-## Expanding the ESLint configuration
+Este site foi desenvolvido como uma plataforma para exibir minhas habilidades e projetos em uma interface moderna e acessível. Minha meta foi criar uma experiência de usuário intuitiva e profissional, refletindo minha paixão pelo desenvolvimento e minha experiência em projetos reais. A estrutura modular e responsiva facilita a navegação e garante uma experiência consistente em diferentes dispositivos.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 💻 Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Este projeto utiliza uma stack de tecnologias front-end moderna para construir uma experiência visual agradável e eficiente. As principais tecnologias incluem:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **React**: Biblioteca JavaScript para construir interfaces de usuário de forma declarativa e eficiente, permitindo a criação de componentes reutilizáveis.
+  
+- **TypeScript**: Suporte para tipagem estática, o que melhora a manutenção do código e reduz erros em tempo de execução.
+  
+- **HTML5** e **CSS3**: Estrutura e estilização do conteúdo, garantindo uma base sólida e uma estética responsiva.
+  
+- **Vite**: Ferramenta de build rápida e leve para desenvolvimento com React e TypeScript.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🔍 Seções Principais
+
+O site está dividido em seções que destacam diferentes aspectos do meu trabalho e habilidades:
+
+- **👨‍💻 Sobre Mim**: Uma introdução detalhada sobre minha trajetória como desenvolvedor, incluindo experiências em maratonas de programação e Game Jams.
+  
+- **💼 Skills**: Cards que destacam minhas habilidades técnicas, com foco em front-end e back-end, além das ferramentas que uso regularmente.
+  
+- **🚀 Projetos**: Exibição dos meus projetos mais significativos, com links para repositórios e detalhes técnicos.
+  
+- **🎉 Eventos**: Lista de eventos e experiências, incluindo hackathons e outras participações relevantes.
+
+---
+
+## 🚀 Rodando o Projeto
+
+Para rodar o projeto localmente, siga os passos abaixo:
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/saulosw/portfolio-saulosw
+2. Navegue para o diretório do projeto:
+   ```bash
+   cd portfolio-saulosw
+3. Instale as dependências:
+   ```bash
+   npm install
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+
+> **Nota**: Certifique-se de ter o Node.js e o npm instalados para rodar o projeto corretamente.
+
+---
