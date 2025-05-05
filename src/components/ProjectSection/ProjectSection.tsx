@@ -7,6 +7,7 @@ import FoodPathPrev from '../../assets/videos/FoodPathPrev.mp4';
 import AccountManagementPrev from '../../assets/videos/AccountManagementPrev.mp4';
 import UnderOceanPrev from '../../assets/videos/UnderOceanPrev.mp4';
 import CuteCatPrev from '../../assets/videos/CuteCatPrev.mp4';
+// import UberSafeStartPrev from '../../assets/videos/UberSafeStartPrev.mp4';
 
 const ProjectsSection: React.FC = () => {
   const { ref, inView } = useInView({
@@ -15,6 +16,13 @@ const ProjectsSection: React.FC = () => {
   });
 
   const projects = [
+    {
+      title: "UberSafeStart",
+      description: "Aplicativo desenvolvido em resposta a um desafio proposto pela Uber para aumentar a segurança dos usuários. Implementei uma abordagem gamificada para incentivar comportamentos seguros, com interface intuitiva e funcionalidades interativas. Este projeto usa conceitos de UX/UI modernos e foi apresentado diretamente para representantes da Uber.",
+      tecnologies: "Android Studio - Java - XML",
+      video: FoodPathPrev,
+      githubLink: "https://github.com/saulosw/uber-safestart"
+    },
     {
       title: "FoodPath",
       description: "FoodPath é uma plataforma desenvolvida como projeto da faculdade para conscientizar e facilitar doações no combate à fome no Brasil. Com dados estatísticos e acesso a ONGs, o site conecta usuários a oportunidades de doação, promovendo uma distribuição de recursos para apoiar a erradicação da fome no país.",
@@ -69,6 +77,6 @@ const ProjectsSection: React.FC = () => {
       </div>
     </section>
   );
-}
+};
 
 export default ProjectsSection;

@@ -1,49 +1,78 @@
 .skill-card {
-    background-color: #121c1e;
+  background-color: #101418;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 5px solid #ed145b;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.skill-icon {
+  margin-bottom: 20px;
+  color: #ed145b;
+  font-size: 2.5rem;
+}
+
+.skill-card h3 {
+  color: #ed145b;
+  margin-bottom: 15px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.skill-card p {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.skill-card h4 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ed145b;
+}
+
+.skill-card ul {
+  font-size: 1.3rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-card ul li {
+  padding: 8px 0;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.skill-card ul li::before {
+  content: "•";
+  color: #ed145b;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .skill-card {
+    width: 320px;
     padding: 20px;
-    border-radius: 15px;
-    width: 400px;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-  }
-  
-  .skill-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .skill-icon {
-    margin-bottom: 15px;
-    color: #ed145b;
   }
   
   .skill-card h3 {
-    color: #ed145b;
-    margin-bottom: 10px;
-    font-size: 2.1rem;
-    font-weight: bold;
+    font-size: 2rem;
   }
   
   .skill-card p {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
   }
-  
-  .skill-card h4 {
-    margin-bottom: 10px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #ed145b;
-  }
-  
-  .skill-card ul {
-    font-size: 1.3rem;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .skill-card ul li {
-    padding: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-  }  
+}

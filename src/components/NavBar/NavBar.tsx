@@ -24,6 +24,8 @@ const NavBar: React.FC = () => {
           <ul className="navbar-nav navbar-links ms-auto">
             <li><a className="nav-link" href="#sobre-mim">Sobre mim</a></li>
             <li><a className="nav-link" href="#skills">Skills</a></li>
+            <li><a className="nav-link" href="#experiencia">Experiência</a></li>
+            <li><a className="nav-link" href="#timeline">Trajetória</a></li>
             <li><a className="nav-link" href="#projetos">Projetos</a></li>
             <li><a className="nav-link" href="#eventos">Eventos</a></li>
           </ul>

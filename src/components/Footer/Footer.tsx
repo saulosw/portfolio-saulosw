@@ -12,6 +12,8 @@ const Footer: React.FC = () => {
           <ul className="nav-links">
             <li><a href="#sobre-mim" className="footer-link">Sobre mim</a></li>
             <li><a href="#skills" className="footer-link">Skills</a></li>
+            <li><a href="#experiencia" className="footer-link">Experiência</a></li>
+            <li><a href="#timeline" className="footer-link">Trajetória</a></li>
             <li><a href="#projetos" className="footer-link">Projetos</a></li>
             <li><a href="#eventos" className="footer-link">Eventos</a></li>
           </ul>
