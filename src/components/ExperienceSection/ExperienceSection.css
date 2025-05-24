@@ -1,157 +1,206 @@
 .experience-section {
-    padding: 5rem 2rem;
-    color: #ffffff;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    background-color: #121c1e;
-  }
-  
-  .experience-section.reveal {
-    opacity: 1;
-    transform: translateY(0);
+  padding: 5rem 2rem;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  background-color: #121c1e;
+}
+
+.experience-section.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-title {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+
+.experience-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #ed145b;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+.experience-header {
+  margin-bottom: 1.5rem;
+  flex: 1;
+  min-width: 250px;
+}
+
+.experience-header h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #ed145b;
+  margin-bottom: 0.5rem;
+}
+
+.company-logo-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}  
+
+.company {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #ffffff;
+}
+
+.company-logo {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.experience-content {
+  flex-basis: 100%;
+  margin-top: 1.5rem;
+}
+
+.period {
+  display: block;
+  font-size: 1.4rem;
+  color: #999;
+  font-style: italic;
+}
+
+.experience-content ul {
+  padding-left: 1.5rem;
+}
+
+.experience-content li {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.experience-content li::before {
+  content: "•";
+  color: #ed145b;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 3rem 1.5rem;
   }
   
   .section-title {
-    font-size: 5rem;
-    font-weight: bold;
-    margin-bottom: 3rem;
-    color: #ffffff;
-  }
-  
-  .experience-container {
-    max-width: 1000px;
-    margin: 0 auto;
+    font-size: 3.5rem;
   }
   
   .experience-card {
-    background-color: #1a1a1a;
-    border-radius: 15px;
-    padding: 2.5rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-left: 5px solid #ed145b;
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2rem;
   }
   
-  
-  .experience-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+  .company-logo-container {
+    margin: 0 auto 1.5rem;
+    width: 100px;
+    height: 100px;
   }
   
   .experience-header {
-    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
   }
   
   .experience-header h3 {
-    font-size: 2.4rem;
-    font-weight: bold;
-    color: #ed145b;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
   }
-
-  .company-logo-container {
-    width: 120px;
-    height: 120px;
-    border-radius: 12px;
-    overflow: hidden;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 2rem;
-    flex-shrink: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }  
   
   .company {
-    display: block;
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-bottom: 0.3rem;
-    color: #ffffff;
-  }
-
-  .company-logo {
-    width: 80%;
-    height: auto;
-    object-fit: contain;
-  }
-  
-  .experience-header {
-    flex: 1;
-    min-width: 250px;
-  }
-  
-  .experience-content {
-    flex-basis: 100%;
-    margin-top: 1.5rem;
-  }
-  
-  @media (max-width: 768px) {
-    .experience-card {
-      flex-direction: column;
-    }
-    
-    .company-logo-container {
-      margin: 0 auto 1.5rem;
-    }
-    
-    .experience-header {
-      text-align: center;
-    }
+    font-size: 1.5rem;
   }
   
   .period {
-    display: block;
-    font-size: 1.4rem;
-    color: #999;
-    font-style: italic;
+    font-size: 1.2rem;
   }
   
-  .experience-content ul {
-    padding-left: 1.5rem;
+  .experience-content {
+    margin-top: 1rem;
   }
   
   .experience-content li {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    margin-bottom: 0.8rem;
-    position: relative;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-section {
+    padding: 2.5rem 1rem;
   }
   
-  .experience-content li::before {
-    content: "•";
-    color: #ed145b;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
   
-  @media (max-width: 768px) {
-    .section-title {
-      font-size: 3.5rem;
-    }
-    
-    .experience-card {
-      padding: 1.5rem;
-    }
-    
-    .experience-header h3 {
-      font-size: 2rem;
-    }
-    
-    .company {
-      font-size: 1.5rem;
-    }
-    
-    .experience-content li {
-      font-size: 1.2rem;
-    }
+  .experience-card {
+    padding: 1.5rem;
   }
+  
+  .company-logo-container {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .experience-header h3 {
+    font-size: 1.8rem;
+  }
+  
+  .company {
+    font-size: 1.3rem;
+  }
+  
+  .period {
+    font-size: 1.1rem;
+  }
+  
+  .experience-content ul {
+    padding-left: 1rem;
+  }
+  
+  .experience-content li {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+}

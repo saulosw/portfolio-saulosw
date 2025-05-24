@@ -43,3 +43,38 @@
     line-height: 1.6;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    .event-card {
+        padding: 1.5rem;
+    }
+    
+    .event-title {
+        font-size: 1.8rem;
+    }
+    
+    .event-description {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-card {
+        padding: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .event-image {
+        margin-bottom: 1.2rem;
+    }
+    
+    .event-title {
+        font-size: 1.6rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .event-description {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
