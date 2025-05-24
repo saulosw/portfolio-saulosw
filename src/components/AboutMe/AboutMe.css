@@ -69,12 +69,12 @@
   flex-shrink: 0;
   z-index: 1;
   position: relative;
-  margin-right: 50px;
+  margin-right: 100px;
 }
 
 .about-me-image {
-  width: 600px;
-  height: 600px;
+  width: 700px;
+  height: 700px;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid #ed145b;

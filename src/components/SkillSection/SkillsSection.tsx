@@ -37,14 +37,14 @@ const SkillsSection: React.FC = () => {
           title="Dados e Analytics"
           description="Transformo dados em insights acionáveis, criando visualizações impactantes e automações que otimizam fluxos de trabalho."
           technologiesTitle="Ferramentas:"
-          technologies={['Excel', 'Power BI', 'Tableau', 'Databricks', 'SQL']}
+          technologies={['SQL', 'Excel', 'Power BI', 'Tableau']}
         />
         <SkillCard
           icon={faTools}
           title="Ferramentas"
           description="Utilizo uma variedade de ferramentas para otimizar meu fluxo de trabalho e colaborar de maneira eficiente em projetos."
           technologiesTitle="Ferramentas:"
-          technologies={['Git', 'GitHub', 'Figma', 'VSCode', 'Unity', 'Android Studio']}
+          technologies={['Git/Github', 'SAS Enterprise Guide', 'VSCode', 'Unity', 'Android Studio']}
         />
       </div>
     </section>

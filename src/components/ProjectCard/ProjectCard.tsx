@@ -10,9 +10,17 @@ interface ProjectCardProps {
   tecnologies: string;
   video: string;
   githubLink: string;
+  isMobileApp?: boolean;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, tecnologies, video, githubLink }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ 
+  title, 
+  description, 
+  tecnologies, 
+  video, 
+  githubLink,
+  isMobileApp = false
+}) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -31,18 +39,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, tecnologi
   return (
     <div 
       ref={ref} 
-      className={`project-card ${inView ? 'reveal' : ''}`} 
+      className={`project-card ${inView ? 'reveal' : ''} ${isMobileApp ? 'mobile-app' : ''}`} 
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <video
-        ref={videoRef}
-        src={video}
-        className="project-video"
-        muted
-        loop
-        preload="metadata"
-      />
+      <div className={`video-container ${isMobileApp ? 'mobile-app-container' : ''}`}>
+        <video
+          ref={videoRef}
+          src={video}
+          className={`project-video ${isMobileApp ? 'mobile-app-video' : ''}`}
+          muted
+          loop
+          preload="metadata"
+        />
+      </div>
       <div className="project-info">
         <h3 className="project-title">{title}</h3>
         <p className="project-description">{description}</p>

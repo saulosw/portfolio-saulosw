@@ -31,7 +31,6 @@ const ExperienceSection: React.FC = () => {
               <li>Desenvolvimento de automações em Python para otimização de fluxos de trabalho</li>
               <li>Realização de consultas SQL para análise e manipulação de dados</li>
               <li>Criação e manutenção de dashboards em Tableau, Power BI e Excel</li>
-              <li>Utilização de Databricks para engenharia e análise de dados</li>
               <li>Colaboração com equipes multifuncionais para implementação de soluções de dados</li>
             </ul>
           </div>
